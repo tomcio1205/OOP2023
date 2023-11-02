@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JQfB7o5ktFHYxzEFFx1w9ohp+r9PpggneEvlVsF4+sbeAbKviyhJMdhOcHhqd83EBJViJvUAoKQyg3yzwc186A==",
+  "dgSpecHash": "VgehlPk/Yo9B9LzVJ3LiWrCvg5RcHVf96GdNUtoCeuyWnbXNFqS9fIhtJvFG2yXkoQM043Eok8Dlze7aFo9ZzQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\trajzer\\Documents\\LAB2\\LAB2\\LAB2.csproj",
+  "projectFilePath": "C:\\Users\\trajzer\\Documents\\OOP2023\\LAB2\\LAB2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trajzer\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
   ],

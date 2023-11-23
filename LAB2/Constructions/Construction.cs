@@ -48,13 +48,26 @@ namespace LAB2.Constructions
             }
             set
             {
-                //if (value == string.Empty)
-                //{
-                //    throw new ArgumentNullException();
-                //}
                 _buildMaterial = value;
             }
         }
         private BuildMaterialType _buildMaterial { get; set; }
+
+        public double GetSquareCost()
+        {
+            if (BuildMaterial == BuildMaterialType.Brik)
+            {
+                return Width * Height * 0.9 * 0.8;
+            }
+            if (BuildMaterial == BuildMaterialType.Concrete)
+            {
+                return Width * Height * 0.9 * 0.87;
+            }
+            if (BuildMaterial == BuildMaterialType.Wood)
+            {
+                return Width * Height * 0.9 * 0.78;
+            }
+            return 0;
+        }
     }
 }

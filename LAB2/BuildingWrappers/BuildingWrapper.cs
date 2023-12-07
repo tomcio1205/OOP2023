@@ -19,7 +19,7 @@ namespace LAB2.BuildingWrappers
 
         public double GetWrappedSquareCost()
         {
-            return _construction.GetSquareCost();
+            return _construction.CalculateSquareCost();
         }
     }
 }

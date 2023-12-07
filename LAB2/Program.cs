@@ -1,4 +1,5 @@
 ﻿using LAB2.BuildingWrappers;
+using LAB2.CommercialBuildings;
 using LAB2.Constructions;
 using LAB2.Constructions.Models;
 using LAB2.IndustrialHalls;
@@ -35,7 +36,13 @@ namespace LAB2
             var wrapper1 = new BuildingWrapper(industrialHall);
             var wrapper2 = new BuildingWrapper(residentalBuilding);
             Console.WriteLine(wrapper1.GetWrappedSquareCost());
-            Console.WriteLine(wrapper2.GetWrappedSquareCost()); 
+            Console.WriteLine(wrapper2.GetWrappedSquareCost());
+
+            var commercialBuilding = new CommercialBuilding(23, 45, 4, 6, BuildMaterialType.Concrete, "Ecommerce");
+            commercialBuilding.OpenBusiness();
+            Console.WriteLine(commercialBuilding.BuildMaterial);
+            Console.WriteLine(commercialBuilding.Height);
+            Console.WriteLine(commercialBuilding.Width);
         }
     }
 }

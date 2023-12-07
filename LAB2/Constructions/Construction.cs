@@ -1,4 +1,5 @@
 ﻿using LAB2.Constructions.Models;
+using LAB2.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LAB2.Constructions
 {
-    class Construction
+    class Construction: ISquareCost
     {
         public Construction(double height, double width, int entrances, 
             int humanCapacity, BuildMaterialType buildMaterial)
@@ -68,6 +69,11 @@ namespace LAB2.Constructions
                 return Width * Height * 0.9 * 0.78;
             }
             return 0;
+        }
+
+        public double CalculateSquareCost()
+        {
+            return GetSquareCost();
         }
     }
 }
